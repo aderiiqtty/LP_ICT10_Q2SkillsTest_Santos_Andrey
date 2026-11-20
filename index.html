@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Non-Metal Elements</title>
+  <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+  <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #eef3ff;
+      color: #1e293b;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .box {
+      max-width: 500px;
+      margin: 30px auto;
+      background: white;
+      border: 2px solid #cbd5e1;
+      border-radius: 10px;
+      padding: 20px;
+    }
+
+    h1 {
+      margin-top: 0;
+      margin-bottom: 5px;
+      font-size: 24px;
+      color: #1d4ed8;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px 10px;
+      font-size: 15px;
+      border: 1px solid #94a3b8;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+
+    button {
+      width: 100%;
+      padding: 9px;
+      font-size: 15px;
+      background-color: #16a34a;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .result-box {
+      margin-top: 15px;
+      padding: 12px;
+      background-color: #f8fafc;
+
+      border-radius: 6px;
+      min-height: 85px;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1>Non-Metal Elements</h1>
+    <p class="subtitle">Element Finder</p>
+
+    <label for="element">Enter Symbol:</label>
+    <input id="element" type="text" placeholder="Example: O, Cl, Ne, Xe" autocomplete="off">
+    <button py-click="check_element">Check Element</button>
+
+    <div id="result" class="result-box">Type a symbol and click Check Element.</div>
+  </div>
+
+  <script type="py" src="./main.py"></script>
+</body>
+</html>
